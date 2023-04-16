@@ -1,0 +1,26 @@
+.SearchResults {
+    width: 50%;
+    height: 950px;
+    overflow-y: scroll;
+    padding: .88rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+  }
+  
+  ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+  }
+
+  .SearchResults h2 {
+    font-weight:100;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 1020px) {
+    .SearchResults {
+      width: 90%;
+      margin-bottom: 2rem;
+    }
+  }

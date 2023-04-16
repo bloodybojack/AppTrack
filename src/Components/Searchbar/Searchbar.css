@@ -1,0 +1,50 @@
+.SearchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6.94rem;
+    margin-bottom: 6.33rem;
+  }
+  
+  .SearchBar input {
+    font-family: 'Yu Gothic UI', sans-serif;
+    width: 287px;
+    padding: .88rem 0;
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 3px;
+    margin-bottom: 2.22rem;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .SearchBar input:focus {
+    outline: none;
+  }
+
+  .SearchBar input::placeholder {
+    color: rgba(255, 255, 255, .7);
+  }
+  
+  .SearchButton {
+    font-family: 'Yu Gothic UI', sans-serif;
+    cursor: pointer;
+    width: 8.11rem;
+    padding: .77rem 0;
+    border-radius: 50px;
+    background-color: transparent;
+    text-align: center;
+    font-size: .833rem;
+    letter-spacing: .05rem;
+    transition: background-color .5s;
+    border: 1px solid white;
+    color: #fff;
+    font-weight: 400;
+  }
+  
+  .SearchButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transition: background-color .25s;
+  }

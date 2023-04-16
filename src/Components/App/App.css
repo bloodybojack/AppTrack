@@ -1,0 +1,56 @@
+body,
+html,
+#root {
+  height: 100%;
+}
+
+html {
+  font-size: 18px;
+  background-color: black;
+}
+
+h1 {
+  padding: .77rem 0;
+  background-color: #000000;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 3rem;
+  font-weight: 100;
+  text-transform: initial;
+  letter-spacing: .2rem;
+  color: #fff;
+}
+
+h1 .highlight {
+  color: rgb(231, 210, 107);
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 1.55rem;
+}
+
+.App {
+  height: 100%;
+  padding: 0 17% 10% 17%;
+  background-image: url('./picture.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.App-playlist {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .App-playlist {
+    align-items: center;
+    flex-direction: column;
+  }
+}
