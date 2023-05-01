@@ -8,7 +8,8 @@
   
   .SearchBar input {
     font-family: 'Yu Gothic UI', sans-serif;
-    width: 287px;
+    width: 50%;
+    min-width: 250px;
     padding: .88rem 0;
     border: 1px solid #fff;
     background-color: transparent;

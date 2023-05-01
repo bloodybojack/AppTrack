@@ -19,8 +19,6 @@ const Spotify = {
         } else {
             const endpoint = `https://accounts.spotify.com/authorize?response_type=code&client_id=${client_id}&redirect_uri=${redirect_uri}`
             window.location = endpoint;
-            console.log(authCode);
-            console.log(accessToken);
         }
     },
     
@@ -63,8 +61,6 @@ const Spotify = {
     async search(term) {
         if(accessToken === undefined || accessToken.length === 0) {
             Spotify.getAccessToken();
-        } else {
-            console.log(accessToken);
         }
         
         term = term.replace(/ /g, "+");

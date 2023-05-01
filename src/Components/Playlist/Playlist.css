@@ -18,18 +18,25 @@
     background: transparent;
     border-bottom: 1px solid white;
     padding-bottom: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lora';
+    font-weight: 100;
     font-size: 1.55rem;
     color: #fff;
     text-align: center;
   }
   
-  .Playlist-save {
+  #buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .Playlist-button {
+    display: inline;
     cursor: pointer;
     font-family: 'Yu Gothic UI', sans-serif;
     font-weight: 400;
     letter-spacing: .05rem;
-    width: 10rem;
+    width: 7.5rem;
     padding: .77rem 0;
     border-radius: 54px;
     border-width: 0px;
@@ -42,7 +49,7 @@
     border: 1px solid white;
   }
   
-  .Playlist-save:hover {
+  .Playlist-button:hover {
     background-color: white;
     color: black;
     transition: background-color .25s;

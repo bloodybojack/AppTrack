@@ -6,7 +6,7 @@ export class SearchResults extends React.Component {
     render() {
         return (
             <div className="SearchResults">
-                <h2>RESULTS</h2>
+                <h2>Results</h2>
                 <TrackList source="SearchResults" tracks={this.props.searchResults} onAdd={this.props.onAdd} isRemoval={false}/>
             </div>
         );
