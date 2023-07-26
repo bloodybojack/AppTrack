@@ -4,7 +4,7 @@ let authCode;
 const auth_url = "https://accounts.spotify.com/api/token";
 const client_id = "19a21a36fede41ffad6d7004f68247d6";
 const client_secret = "62944575d78543e284adbcc76522d8cd";
-const redirect_uri = "http://localhost:3000";
+const redirect_uri = "http://localhost:3001";
 
 const Spotify = {
 

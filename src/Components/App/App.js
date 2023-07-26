@@ -2,8 +2,6 @@
  * 
  * TODO:
  * - Add pictures beside the tracks
- * - Clear playlist button
- * - Save states for playlist and last search term and fills in past results onload **DONE YEAH**
  * FIXME:
  * - The website reloads when you press search. Should alert it needs credentials and remember the past token.
  */
@@ -140,12 +138,29 @@ export class App extends React.Component {
 
   rememberPast() {
     // retrive
-    let playlist = localStorage.getItem('playlist');
-    playlist = JSON.parse(playlist);
+    let playlist;
+    if(localStorage.getItem('playlist') === null) {
+      playlist = 0;
+    } else {
+      playlist = localStorage.getItem('playlist');
+      playlist = JSON.parse(playlist);
+    }
     console.log(`playlist length: ${playlist.length}`);
     console.log(playlist);
-    const lastSearch = localStorage.getItem('lastSearch');
-    const lastName = localStorage.getItem('lastName');
+    
+    let lastSearch;
+    if(localStorage.getItem('lastSearch') === null) {
+      lastSearch = 'Something went wrong';
+    } else {
+      lastSearch = localStorage.getItem('lastSearch');
+    }
+
+    let lastName;
+    if(localStorage.getItem('lastName') === null) {
+      lastName = 'Something went wrong';
+    } else {
+      lastName = localStorage.getItem('lastName');
+    }
 
     // refill
     if(playlist !== this.state.playlistTracks && playlist.length > 0) {
